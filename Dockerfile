@@ -4,6 +4,8 @@ MAINTAINER Snyk Ltd
 
 ENV NODE_ENV production
 
+RUN apt-get update && apt-get install -yy apache2-utils
+
 RUN mkdir -p /srv/app
 WORKDIR /srv/app
 
